@@ -1,0 +1,24 @@
+{# templates/article/new.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvel Article{% endblock %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('build/newArticle.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Add a new article</h1>
+
+        {{ include('article/_form.html.twig', {'button_label': 'Add'}) }}
+
+        <div class="text-center mt-3">
+            <a href="{{ path('article_show') }}" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Cancel
+            </a>
+        </div>
+    </div>
+{% endblock %}

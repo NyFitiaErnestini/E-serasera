@@ -25,7 +25,7 @@ Ce projet est une application web permettant aux utilisateurs de publier des art
 ### 🚀 Installation
 
 #### 1. Cloner le projet
-git clone https://github.com/ton-utilisateur/ton-projet.git
+git clone git@github.com:NyFitiaErnestini/E-serasera.git
 cd ton-projet
 
 2. Installation du backend (Symfony)

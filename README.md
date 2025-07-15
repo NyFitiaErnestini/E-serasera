@@ -29,11 +29,15 @@ git clone https://github.com/ton-utilisateur/ton-projet.git
 cd ton-projet
 
 2. Installation du backend (Symfony)
+   
 cd backend
+
 composer install
+
 Configurer le fichier .env :
 
 DATABASE_URL="postgresql://utilisateur:motdepasse@127.0.0.1:5432/nom_de_ta_db"
+s
 Créer la base de données et exécuter les migrations :
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
